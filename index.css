@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+
+    background: #fff;
+
+    box-shadow: 4px 4px 8px 0px rgba(94, 94, 94, 0.2);
+    padding: 25px 10px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+
+    margin-bottom: 25px;
+}
+
+header>* {
+    margin: 5px 5px;
+}
+
+header button {
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+header input {
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+
+    header input {
+        width: auto;
+    }
+}
